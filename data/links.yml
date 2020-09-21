@@ -1,23 +1,23 @@
 ---
 - group: DGDockerX "Staging" Sites @ Grinnell College
   items:
-    - title: DG-STAGING: ISLE v1.5.1 in Staging
-      icon: fas fa-th
+    - title: "DG-STAGING: ISLE v1.5.1 in Staging"
+      icon: far fa-check-circle
       url: https://dg-staging.grinnell.edu/
       description: This is my staging copy of ISLE v1.5.1.
     - title: WhoAmI
-      icon: fas fa-th
-      url: https://isle-staging.grinnell.edu/
+      icon: far fa-question-circle
+      url: https://dgdockerx.grinnell.edu/
       description: Temporary address for test staging with a _WhoAmI_ service.
     - title: Traefik Dashboard
-      icon: fas fa-edit
+      icon: fas fa-traffic-light
       url: https://dgdockerx.grinnell.edu/dashboard/
       description: The Traefik dashboard for this server.
     - title: Portainer Dashboard
-      icon: fab fa-pagelines
+      icon: fab fa-docker
       url: https://dgdockerx.grinnell.edu/portainer/
       description: The Portainer dashboard for this server.
-      
+
 - group: OneTab Links
   items:
     - title: Mark's Essential/Daily GC Links
