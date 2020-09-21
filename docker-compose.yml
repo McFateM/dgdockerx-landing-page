@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  landing:
+    image: mcfatem/dgdockerx-landing:latest
+    container_name: landing-page
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - proxy
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./data:/data
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=proxy"
+      - "traefik.http.routers.landing-secure.entrypoints=https"
+      - "traefik.http.routers.landing-secure.rule=Host(`dgdockerx.grinnell.edu`)"
+      - "traefik.http.routers.landing-secure.tls=true"
+      - "traefik.http.routers.landing-secure.tls.certresolver=http"
+      - "traefik.http.routers.landing-secure.service=dgdockerx-landing-page_landing-page"
+      - "com.centurylinklabs.watchtower.enable=true"
+
+networks:
+  proxy:
+    external: true

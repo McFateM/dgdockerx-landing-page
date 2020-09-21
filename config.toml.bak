@@ -1,0 +1,35 @@
+baseURL = "https://dgdocker3.grinnell.edu/"
+languageCode = "en-US"
+title = "DGDocker3.Grinnell.edu"
+theme = "bootstrap-bp-hugo-startpage"
+googleAnalytics = "UA-131150861-3"
+copyright = "Mark A. McFate"
+enableRobotsTXT = true
+pygmentsCodeFences = true
+canonifyurls = true
+paginate = 5
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+[permalinks]
+  posts = "/:year/:month/:slug/"
+  post = "/:year/:month/:slug/"
+  pages = "/:slug/"
+  page = "/:slug/"
+
+[Author]
+  name = "Mark A. McFate"
+
+[params]
+  description = "Welcome to the DGDocker3.Grinnell.edu landing page at Grinnell College!"
+  #images = ["logo.jpg"]
+  startPageColumns = true
+  welcomeText = "This landing page is designed solely to provide navigation to the sites/services listed below."
+  buildDate = '2020-05-11 12:41'
+
+[[params.searchEngines]]
+  name = "Google"
+  activated = true
+  url = "https://www.google.com/search"
