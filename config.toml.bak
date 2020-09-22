@@ -1,4 +1,4 @@
-baseURL = "https://dgdockerx.grinnell.edu/"
+baseURL = "https://dgdockerx.grinnell.edu"
 languageCode = "en-US"
 title = "DGDockerX.Grinnell.edu"
 theme = "bootstrap-bp-hugo-startpage"
@@ -27,7 +27,7 @@ paginate = 5
   #images = ["logo.jpg"]
   startPageColumns = true
   welcomeText = "This landing page is designed solely to provide navigation to the sites/services listed below."
-  buildDate = '2020-09-21 13:05'
+  buildDate = '2020-09-21 14:02'
 
 [[params.searchEngines]]
   name = "Google"
