@@ -3,8 +3,8 @@
   items:
     - title: WhoAmI
       icon: far fa-question-circle
-      url: https://dg-staging.grinnell.edu/
-      description: Temporary address for test staging with a _WhoAmI_ service.
+      url: https://dgdockerx.grinnell.edu/whoami/
+      description: Permanent address for the server's _WhoAmI_ service.
     - title: Traefik Dashboard
       icon: fas fa-traffic-light
       url: https://dgdockerx.grinnell.edu/dashboard/
@@ -13,9 +13,10 @@
       icon: fab fa-docker
       url: https://dgdockerx.grinnell.edu/portainer/
       description: The Portainer dashboard for this server.
-#   - title: "DG-STAGING: ISLE v1.5.1 in Staging"
-#     icon: far fa-check-circle
-#     url: https://dg-staging.grinnell.edu/
+    - title: "DG-STAGING: ISLE v1.5.1 in Staging"
+      icon: far fa-check-circle
+      url: https://dg-staging.grinnell.edu/
+      description: Temporary address for test staging with a _WhoAmI_ service.
 #     description: This is my staging copy of ISLE v1.5.1.
 
 - group: OneTab Links
